@@ -1,0 +1,45 @@
+<nav class="navbar navbar-ligth">
+  <span class="navbar-brand mb-0 h1 text-center">Registrar Hora Extra</span>
+</nav>
+
+<div>
+  <form style="padding: 5%;" class="row">
+    <div class="form-group col-6">
+      <label>Documento</label>
+      <input type="text" class="form-control" placeholder="Documento" [(ngModel)]="Documento" [ngModelOptions]="{standalone: true}">
+    </div>
+    <div class="form-group col-6">
+      <label for="Nombre">Nombres y Apellidos</label>
+      <input type="text" class="form-control" id="Nombre" placeholder="Nombres" [(ngModel)]="Nombres" [ngModelOptions]="{standalone: true}">
+    </div>
+    <div class="form-group col-6">
+      <label for="FechaI">Fecha Inicio</label>
+      <input type="date" class="form-control" id="FechaI" placeholder="Fecha Inicio" [(ngModel)]="FechaI" [ngModelOptions]="{standalone: true}">
+    </div>
+    <div class="form-group col-6">
+      <label for="FechaF">Fecha Fin</label>
+      <input type="date" class="form-control" id="FechaF" placeholder="Fecha Fin" [(ngModel)]="FechaF" [ngModelOptions]="{standalone: true}">
+    </div>
+    <div class="form-group col-6">
+      <label for="HoraI">Hora Inicio Turno</label>
+      <input type="time" class="form-control" id="HoraI" placeholder="Hora Inicio Turno" [(ngModel)]="HorarioI" [ngModelOptions]="{standalone: true}">
+    </div>
+    <div class="form-group col-6">
+      <label for="HoraF">Hora Fin Turno</label>
+      <input type="time" class="form-control" id="HoraF" placeholder="Hora Fin Turno" [(ngModel)]="HorarioF" [ngModelOptions]="{standalone: true}">
+    </div>
+    <div class="form-group col-6">
+      <label for="HoraIE">Hora Inicio Tiempo Extra</label>
+      <input type="time" class="form-control" id="HoraIE" placeholder="Hora Inicio Extra" [(ngModel)]="InicioExtra" [ngModelOptions]="{standalone: true}">
+    </div>
+    <div class="form-group col-6">
+      <label for="HoraFE">Hora Fin Tiempo Extra</label>
+      <input type="time" class="form-control" id="HoraFE" placeholder="Hora Fin Extra" [(ngModel)]="FinExtra" [ngModelOptions]="{standalone: true}">
+    </div>
+    <div class="form-group col-12">
+      <label for="Motivo">Motivo Horas extra</label>
+      <textarea class="form-control" id="Motivo" placeholder="Motivo Horas Extra" [(ngModel)]="MotivoExtra" [ngModelOptions]="{standalone: true}"></textarea>
+    </div>
+    <button class="btn btn-primary" (click)="Enviar()">Submit</button>
+  </form>
+</div>
